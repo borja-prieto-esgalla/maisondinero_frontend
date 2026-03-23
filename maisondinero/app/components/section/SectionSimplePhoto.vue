@@ -1,16 +1,13 @@
 <template>
-  <!-- SECCIÓN 7: foto simple centrada, ancha -->
-  <section class="w-full flex flex-col items-center gap-5 px-4">
-    <div class="w-full max-w-2xl md:max-w-3xl mx-auto">
-      <img
-        :src="content.imagen_artista"
-        class="w-full h-auto object-cover"
-      />
-    </div>
+  <section class="container flex flex-col items-center gap-5 px-4">
+    <img
+      :src="content.imagen_artista"
+      class="w-[80%] lg:w-auto h-auto object-cover max-h-[590px]"
+    />
     <div
       v-if="content.texto_creditos"
       v-html="content.texto_creditos"
-      class="credits-content"
+      class="font-sans text-xs lg:text-base text-center text-white"
     />
   </section>
 </template>

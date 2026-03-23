@@ -1,32 +1,29 @@
 <template>
-  <!-- SECCIÓN 1: Hero - dos imágenes a pantalla completa, sin márgenes laterales -->
-  <section class="w-full relative">
-    <!-- En mobile: imagen_mobile si existe, si no imagen_izquierda sola -->
-    <div class="block md:hidden w-full">
+  <section class="container relative">
+    <div class="hidden lg:grid grid-cols-12">
+      <div class="col-span-6 flex justify-end items-center">
+        <img
+          :src="content.imagen_izquierda"
+          alt="Imagen izquierda"
+          class="items-end"
+        />
+      </div>
+      <div class="col-span-6 flex items-center">
+        <img :src="content.imagen_derecha" alt="Imagen derecha" />
+      </div>
+    </div>
+    <div class="flex items-center justify-center lg:hidden">
       <img
-        :src="content.imagen_mobile || content.imagen_izquierda"
-        class="w-full h-auto object-cover"
-        loading="eager"
+        :src="content.imagen_mobile"
+        alt="Imagen móvil"
+        class="w-[80%] h-auto object-cover lg:hidden"
       />
     </div>
-    <!-- Desktop: dos imágenes lado a lado ocupando todo el ancho -->
-    <div class="hidden md:flex w-full items-end">
-      <img
-        :src="content.imagen_izquierda"
-        class="w-1/2 h-auto object-cover object-top"
-        loading="eager"
-      />
-      <img
-        :src="content.imagen_derecha"
-        class="w-1/2 h-auto object-cover object-top"
-        loading="eager"
-      />
-    </div>
-    <!-- Créditos superpuestos abajo -->
+
     <div
       v-if="content.texto_creditos"
       v-html="content.texto_creditos"
-      class="credits-content absolute bottom-3 left-0 right-0 text-center px-4"
+      class="font-sans text-xs lg:text-base text-center text-white mt-4"
     />
   </section>
 </template>

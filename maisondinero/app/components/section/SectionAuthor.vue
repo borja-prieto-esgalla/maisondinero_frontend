@@ -1,9 +1,12 @@
 <template>
-  <!-- SECCIÓN AUTOR: foto final a ancho completo, sin margen -->
   <section class="w-full">
     <img
       :src="content.imagen_principal"
-      class="w-full h-auto object-cover"
+      class="w-full h-auto object-cover lg:block hidden"
+    />
+    <img
+      :src="content.imagen_mobile"
+      class="w-full h-auto object-cover lg:hidden"
     />
   </section>
 </template>

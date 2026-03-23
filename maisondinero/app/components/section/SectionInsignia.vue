@@ -1,26 +1,32 @@
 <template>
-  <!-- SECCIÓN 9: dos fotos con ornamento/insignia entre ellas -->
-  <section class="w-full flex flex-col items-center gap-6 px-4">
-    <div class="flex items-center justify-center w-full max-w-4xl mx-auto gap-2 md:gap-6">
-      <img
-        :src="content.imagen_izquierda"
-        class="w-5/12 h-auto object-cover"
-      />
-      <div class="flex-shrink-0 w-10 md:w-16 lg:w-20">
+  <section class="container relative">
+    <div class="lg:grid grid-cols-12 justify-center">
+      <div class="col-span-5 flex items-center justify-center lg:justify-end">
         <img
-          :src="content.ornamento_central"
-          class="w-full h-auto"
+          :src="content.imagen_izquierda"
+          alt="Imagen izquierda"
+          class="lg:w-auto w-[80%]"
         />
       </div>
-      <img
-        :src="content.imagen_derecha"
-        class="w-5/12 h-auto object-cover"
-      />
+      <div class="col-span-2 flex flex-col items-center justify-center">
+        <img
+          :src="content.ornamento_central"
+          alt="Imagen central"
+          class="w-[100px] lg:w-full h-auto object-cover lg:relative absolute"
+        />
+      </div>
+      <div class="col-span-5 flex items-center justify-center lg:justify-start">
+        <img
+          :src="content.imagen_derecha"
+          alt="Imagen izquierda"
+          class="lg:w-auto w-[80%]"
+        />
+      </div>
     </div>
     <div
       v-if="content.texto_creditos"
       v-html="content.texto_creditos"
-      class="credits-content"
+      class="font-sans text-xs lg:text-base text-center text-white mt-6"
     />
   </section>
 </template>
