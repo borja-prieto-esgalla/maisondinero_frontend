@@ -4,10 +4,10 @@
       <!-- Layout principal: grid 3 columnas iguales -->
       <div class="w-full lg:grid grid-cols-3 items-center">
         <!-- Columna izquierda: cita bíblica -->
-        <div class="flex justify-center lg:justify-start">
+        <div class="relative flex justify-center lg:justify-start">
           <img
             :src="content.imagen_izquierda_texto"
-            class="w-[70%] lg:w-60 h-auto object-contain"
+            class="w-full h-auto object-contain"
             alt="Cita bíblica"
           />
         </div>

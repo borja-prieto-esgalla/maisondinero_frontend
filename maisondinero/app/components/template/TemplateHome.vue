@@ -67,6 +67,19 @@
       }"
     />
 
+    <!-- HERO VIDEO -->
+    <section class="relative z-10 w-full h-screen overflow-hidden">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="~/assets/video/videoinicio.mp4" type="video/mp4" />
+      </video>
+    </section>
+
     <!-- CONTENIDO PRINCIPAL -->
     <main class="relative z-10">
       <div class="flex flex-col gap-16 md:gap-20 lg:gap-24 pt-24 md:pt-32 pb-0">
