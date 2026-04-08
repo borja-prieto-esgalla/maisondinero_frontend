@@ -4,7 +4,7 @@
   >
     <!-- HEADER FIJO -->
     <header
-      class="fixed top-0 left-0 w-full z-50 pointer-events-none px-4 py-4 md:px-8 md:py-6"
+      class="fixed top-0 left-0 w-full z-50 pointer-events-none px-2 py-4 md:px-8 md:py-6"
     >
       <div class="flex justify-between items-start w-full relative">
         <img
@@ -13,14 +13,14 @@
           class="w-20 sm:w-24 md:w-32 lg:w-44 h-auto pointer-events-auto opacity-90"
         />
         <NuxtLink
-          to="/"
+          to="https://www.instagram.com/gcavallifashionweek/"
           class="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-0"
         >
           <img
             v-if="data.acf?.campos_globales?.logo_blanco"
             :src="data.acf?.campos_globales?.logo_blanco"
             alt="Maison Dinero"
-            class="h-10 md:h-24 w-auto object-contain"
+            class="h-14 md:h-24 w-auto object-contain"
           />
         </NuxtLink>
         <img
@@ -60,8 +60,8 @@
     <div
       class="fixed inset-0 z-0 pointer-events-none lg:hidden"
       :style="{
-        backgroundImage: `url(${data.acf?.campos_globales?.patron_cuerpo_negro})`,
-        backgroundSize: '950px',
+        backgroundImage: `url(${data.acf?.campos_globales?.patron_cuerpo_blanco})`,
+        backgroundSize: '390px',
         backgroundRepeat: 'repeat',
         opacity: 0.7,
       }"
