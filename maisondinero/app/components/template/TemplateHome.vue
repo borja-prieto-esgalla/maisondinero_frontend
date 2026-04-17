@@ -76,7 +76,7 @@
         playsinline
         class="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="~/assets/video/videoinicio.mp4" type="video/mp4" />
+        <source src="/video/videoiniciocorregido.mov" type="video/mp4" />
       </video>
     </section>
 
