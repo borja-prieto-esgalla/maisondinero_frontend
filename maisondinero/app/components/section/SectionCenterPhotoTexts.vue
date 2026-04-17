@@ -1,5 +1,5 @@
 <template>
-  <section class="container relative">
+  <section class="lg:container relative">
     <!-- MOBILE -->
     <div class="block md:hidden">
       <div class="relative mx-auto flex items-center justify-center">

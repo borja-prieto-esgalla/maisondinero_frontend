@@ -68,7 +68,7 @@
     />
 
     <!-- HERO VIDEO -->
-    <section class="relative z-10 w-full h-screen overflow-hidden">
+    <section class="relative z-10 w-full h-screen overflow-hidden bg-black">
       <video
         autoplay
         muted
