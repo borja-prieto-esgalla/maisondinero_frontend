@@ -1,6 +1,6 @@
 <template>
   <section class="container py-8">
-    <div class="swiper-container" ref="swiperEl">
+    <div class="swiper" ref="swiperEl">
       <div class="swiper-wrapper">
         <div
           v-for="(img, index) in content.imagenes_slider"
@@ -68,7 +68,7 @@ onBeforeUnmount(() => {
 @import "swiper/css";
 @import "swiper/css/pagination";
 
-.swiper-container {
+.swiper {
   width: 100%;
   overflow: hidden;
 }
