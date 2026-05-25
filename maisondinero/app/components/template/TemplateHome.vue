@@ -104,6 +104,11 @@
             :content="section"
           />
 
+          <SectionSlider
+            v-if="section.acf_fc_layout === 'seccion_slider'"
+            :content="section"
+          />
+
           <SectionThreeImages
             v-if="section.acf_fc_layout === 'seccion_tres_imagenes'"
             :content="section"
